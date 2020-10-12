@@ -433,7 +433,7 @@ COLOR 5
     main>section.section-base.section-color,
     .boxed-area,
     .list-tags a {
-        background-color: #EAF5FC;
+        background-color: #000000;
     }
     
     .cnt-box-testimonials-bubble>p:after {
@@ -454,6 +454,7 @@ LIGHT COLOR
     nav.light .menu-cnt>ul>li>a,
     .light .menu-btn:before {
         color: rgb(0, 0, 0);
+        padding-top: 4px;
     }
     /* .light,
     .light h1,
@@ -552,7 +553,7 @@ LIGHT COLOR
     }
     
     .icon-linkedin:before {
-        content: "\72";
+        content: "\ea4e";
     }
     
     .icon-youtube:before {
@@ -859,6 +860,7 @@ GLOBAL
     .dropdown ul li:hover>a,
     nav:not(.menu-transparent) .menu-cnt>ul>li:hover>a {
         color: rgb(0, 0, 0);
+        padding-top: 15px;
     }
     
     .logo-retina {
@@ -882,7 +884,7 @@ GLOBAL
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 10px;
+        /* padding-top: 10px; */
         z-index: 9999;
         position: relative;
     }
@@ -3003,7 +3005,7 @@ ICON LINK - COMPONENT
     }
     
     .icon-links {
-        display: flex;
+        display: inline-flex;
     }
     
     .icon-links-grid a {
@@ -4582,7 +4584,7 @@ COLUMNS - CONTAINER
     
     footer>.container {
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
     
     .footer-bar {
@@ -5236,7 +5238,7 @@ Medium devices (tablets, less than 992px)
         }
         nav.light .menu-cnt a {
             color: rgb(68, 68, 68) !important;
-            float: right;
+            /* float: right; */
         }
         nav.align-right .menu-cnt {
             display: block;
@@ -5392,7 +5394,7 @@ Medium devices (tablets, less than 992px)
             float: none;
         }
         .footer-parallax {
-            position: static;
+            position: fixed;
         }
     }
     /*
@@ -5942,6 +5944,12 @@ Inverted responsive classes
         .container {
             padding-bottom: 15px!important;
         }
+        .img-top {
+            text-align: center;
+        }
+        body>nav>.container {
+            padding-top: 0px;
+        }
     }
     
     .coster {
@@ -5978,7 +5986,7 @@ Inverted responsive classes
         font-size: 40px;
         color: black;
         line-height: 65px;
-        font-weight: 300!important;
+        font-weight: 400!important;
         /* padding-top: 10%; */
     }
     
@@ -6015,6 +6023,14 @@ Inverted responsive classes
         height: 239px;
         overflow-x: hidden!important;
         border-bottom: solid 1px rgba(0, 0, 0, 0.199);
+    }
+    
+    .fea {
+        height: auto!important;
+    }
+    
+    .text-muted {
+        font-style: italic;
     }
     
     .card-body {
