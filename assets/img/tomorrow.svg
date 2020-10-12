@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="618" height="184" viewBox="0 0 618 184">
+  <defs>
+    <filter id="Rectangle_189" x="0" y="0" width="618" height="184" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#ff5d5d" flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="tomorrow" transform="translate(-85 -2190)">
+    <g transform="matrix(1, 0, 0, 1, 85, 2190)" filter="url(#Rectangle_189)">
+      <g id="Rectangle_189-2" data-name="Rectangle 189" transform="translate(15 9)" fill="#c71f3c" stroke="#c9c9c9" stroke-width="1">
+        <rect width="588" height="154" rx="20" stroke="none"/>
+        <rect x="0.5" y="0.5" width="587" height="153" rx="19.5" fill="none"/>
+      </g>
+    </g>
+    <text id="Tomorrow_is_now._" data-name="Tomorrow is now. " transform="translate(193 2292)" fill="#fff" font-size="45" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Tomorrow is now. </tspan></text>
+  </g>
+</svg>

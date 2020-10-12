@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="762" height="180" viewBox="0 0 762 180">
+  <defs>
+    <filter id="Rectangle_190" x="0" y="0" width="762" height="180" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#ff5d5d" flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="dream" transform="translate(-592 -2267)">
+    <g transform="matrix(1, 0, 0, 1, 592, 2267)" filter="url(#Rectangle_190)">
+      <g id="Rectangle_190-2" data-name="Rectangle 190" transform="translate(15 9)" fill="#fff" stroke="#c9c9c9" stroke-width="1">
+        <rect width="732" height="150" rx="20" stroke="none"/>
+        <rect x="0.5" y="0.5" width="731" height="149" rx="19.5" fill="none"/>
+      </g>
+    </g>
+    <text id="Dream_it._Discover._Build_it._Sell_it." data-name="Dream it. Discover. 
+Build it. Sell it." transform="translate(973 2342)" fill="#c71f3c" font-size="45" font-family="Poppins-Regular, Poppins"><tspan x="-214.043" y="0">Dream it. Discover. </tspan><tspan x="-147.623" y="50">Build it. Sell it.</tspan></text>
+  </g>
+</svg>
