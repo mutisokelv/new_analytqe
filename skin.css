@@ -215,16 +215,6 @@ body>nav .icon-links a i,
     border-color: rgb(18, 48, 74);
 }
 
-body,
-p,
-input,
-textarea,
- ::placeholder,
-.tab-box.tab-vertical>.tab-nav li:not(.active):not(:hover) a,
-body>header .container>h2 {
-    color: rgb(88, 119, 144);
-}
-
 body>nav.light:not(.menu-transparent),
 nav.light.menu-transparent.scroll-menu,
 footer {

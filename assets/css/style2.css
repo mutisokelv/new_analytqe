@@ -90,6 +90,12 @@ Table of contents
         margin: 0;
     }
     
+    .card-body>.card-footer {
+        padding: 0!important;
+        background-color: white!important;
+        border-top: 1px solid rgba(0, 0, 0, .125);
+    }
+    
     p {
         margin: 0;
     }
@@ -5893,7 +5899,7 @@ Inverted responsive classes
     
     .desc23 {
         color: rgba(0, 0, 0, 0.623)!important;
-        line-height: 25px;
+        line-height: 30px;
         font-size: 18px!important;
     }
     
