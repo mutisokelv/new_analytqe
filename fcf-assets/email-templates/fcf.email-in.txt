@@ -1,6 +1,7 @@
-New message from website form is below.
+Hello today, You got a new message from analytqe website.
     
     
-Your name: {Name}
-Your email address: {Email}
-Your message: {Message}
+Name: {Name}
+Email Address: {Email}
+Phone: {Phone}
+Message: {Message}

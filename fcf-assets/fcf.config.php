@@ -22,10 +22,10 @@ define('KEY', 'FREE');
 // FORM FIELD VALIDATION
 // *********************
 $validate = array(
-   "name" => "NOT_EMPTY,1,100",
-   "phone" => "NOT_EMPTY,1,100",
-   "email" => "EMAIL,1,100",
-   "message" => "NOT_EMPTY,1,3000"
+   "Name" => "NOT_EMPTY,1,100",
+   "Email" => "EMAIL,1,100",
+   "Phone" => "NOT_EMPTY,1,100",
+   "Message" => "NOT_EMPTY,1,3000"
 );
 
 
@@ -33,10 +33,10 @@ $validate = array(
 // FORM FIELD MAPPING
 // ******************
 $mapping = array(
-   "Name" => "Your name",
-   "Email" => "Your email address",
-   "Phone" => "Your phone number",
-   "Message" => "Your message"
+   "Name" => "Name:",
+   "Email" => "Email address:",
+   "Phone" => "Phone Number:",
+   "Message" => "Message:"
 );
 
 
@@ -54,18 +54,18 @@ define('EMAIL_TEMPLATE_OUT_HTML', 'fcf.email-out.htm');
 define('EMAIL_TEMPLATE_OUT_TEXT', 'fcf.email-out.txt');
 
 define('SEND_AUTO_RESPONSE', 'NO'); // YES OR NO
-define('EMAIL_OUT_SUBJECT', '');
+define('EMAIL_OUT_SUBJECT', 'AnalytQe Response');
 define('EMAIL_OUT_TO', 'FIELD:Email');
 define('EMAIL_OUT_TO_NAME', 'FIELD:Name');
-define('EMAIL_OUT_FROM', '');
-define('EMAIL_OUT_FROM_NAME', '');
+define('EMAIL_OUT_FROM', 'info@analytqe.com');
+define('EMAIL_OUT_FROM_NAME', 'AnalytQe Response Team');
 
 
 // *************
 // EMAIL MESSAGE
 // *************
 define('EMAIL_TO', 'mutiso@analytqe.com');
-define('EMAIL_TO_NAME', 'Kelv');
+define('EMAIL_TO_NAME', '');
 
 define('EMAIL_TO_CC', '');
 define('EMAIL_TO_CC_NAME', '');
@@ -73,14 +73,14 @@ define('EMAIL_TO_CC_NAME', '');
 define('EMAIL_TO_BCC', '');
 define('EMAIL_TO_BCC_NAME', '');
 
-define('EMAIL_FROM', 'info@analytqe.com');
-define('EMAIL_FROM_NAME', 'AnalytQe Team');
+define('EMAIL_FROM', 'websiteform@analytqe.com');
+define('EMAIL_FROM_NAME', 'AnalytQe Website Form');
 
 define('EMAIL_REPLY_TO', 'FIELD:Email');
 define('EMAIL_REPLY_TO_NAME', 'FIELD:Email');
 
 define('EMAIL_SUBJECT_BEFORE', '');
-define('EMAIL_SUBJECT', "New contact form message");
+define('EMAIL_SUBJECT', "AnalytQe Website Form");
 define('EMAIL_SUBJECT_AFTER', '');
 
 

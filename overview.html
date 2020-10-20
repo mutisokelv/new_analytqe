@@ -175,9 +175,7 @@
             <div class="container ">
 
                 <div class=" text-center look " style="width: 100%; text-align: center; "> <i class="fas fa-quote-left "></i>
-                    <p class=" text-center " style=" text-align: center; padding-left: 10%!important; padding-right: 10%!important; font-size: 25px; line-height: 35px; color: rgba(0, 0, 0, 0.767); "><span> <a href="http://eepurl.com/hc9kxn " style="color:
-                                #C71F3C; ">Innovation is like riding a stormy sea. </a> </span> <br> Every new wave looks huge until you’re on top of it, only to present the next challenge which needs energy, stability, resolve and confidence to take
-                        on.
+                    <p class=" text-center " style=" text-align: center; padding-left: 10%!important; padding-right: 10%!important; font-size: 25px; line-height: 35px; color: rgba(0, 0, 0, 0.767); "><span>Innovation is like riding a stormy sea.    </span> <br> Every new wave looks huge until you’re on top of it, only to present the next challenge which needs energy, stability, resolve and confidence to take on.
                     </p>
                 </div>
             </div>
@@ -186,8 +184,8 @@
         <hr style="margin:0">
 
         <!-- ************************************ PARTNERS **************************** -->
-        <section class=" section-full-width light sect1" id="partners" style="padding-top: 40px; padding-bottom: 40px;">
-            <div class="row" style="max-width: 100%!important;">
+        <section class=" section-full-width light sect1" id="partners" style="padding-top: 40px; padding-bottom: 40px; background-color: rgb(255, 255, 255);">
+            <div class="row container" style="max-width: 100%!important;">
 
                 <p class=" desc2345 col-md-8" style="font-weight: 300!important;">Brands we work with</p>
                 <p class=" titlehd col-md-4 hidden-sm" style="padding-right: 50px;">-Partners</p>
@@ -251,7 +249,7 @@
                 </div>
             </div>
             <div class=" text-center look" style="width: 100%; text-align: center; padding-top: 50px;">
-                <p class=" text-center" style="font-weight: 300; text-align: center; padding-left: 10%!important; padding-right: 10%!important; font-size: 20px; line-height: 35px; color: rgba(0, 0, 0, 0.767);">We work with various entities including startups, SME’s, software firms, audit firms, innovation labs among others to deliver cutting edge solutions. Our partners bring tremendous resources to specific areas of focus. No solution is beyond
+                <p class=" text-center" style="font-weight: 400; text-align: center; padding-top: 50px; padding-left: 10%!important; padding-right: 10%!important; font-size: 20px; line-height: 35px; color: rgba(0, 0, 0, 0.767);">We work with various entities including startups, SME’s, software firms, audit firms, innovation labs among others to deliver cutting edge solutions. Our partners bring tremendous resources to specific areas of focus. No solution is beyond
                     our scope.</p>
             </div>
         </section>
@@ -280,8 +278,8 @@
                         <a class="linkedin"><i class="fab fa-linkedin "></i></a>
                     </div>
                     <br>
-                    <a href="http://eepurl.com/hc9kxn " target="_blank "><button type="button " class="btn btn-xs btn-circle "  style="margin-top: 20px; color: white; background-color: #C71F3C; border-radius: 5px; font-size: larger; padding: 10px;
-                        width: 40%; ">Join Community</button></a>
+                    <button data-toggle="modal" data-target="#myModal" type="button " class="btn btn-xs btn-circle " style="margin-top: 20px; color: white; background-color: #C71F3C; border-radius: 5px; font-size: larger; padding: 10px;
+                       ">Join Our Community</button>
 
                 </div>
             </div>
@@ -299,7 +297,6 @@
     </footer>
 
     <!-- set up the modal to start hidden and fade in and out -->
-    <!-- set up the modal to start hidden and fade in and out -->
     <div id="myModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content ">
@@ -312,42 +309,59 @@
 
                 </div>
                 <div class="modal-body ">
-                    <form id="reused_form freeversion " method="post" action="fcf-assets/fcf.process.php">
-                        <!-- <p>We are an Africa focused platform enabling small and medium enterprises access cutting edge technology and skills while simultaneously connecting their solutions to potential clients through co-creation opportunities.
-                    </p> -->
-                        <p>We got this and many other features cooking for you. Please leave with us your contact details, we'll let you know once we go live.</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group ">
-                                    <label for="name "> Name:</label>
-                                    <input type="text " class="form-control " id="name " name="name " required maxlength="50 ">
+                    <div id="fcf-form">
+                        <form class="fcf-form-class" id="reused_form freeversion " method="post" action="fcf-assets/fcf.process.php">
+                            <!-- <p>We are an Africa focused platform enabling small and medium enterprises access cutting edge technology and skills while simultaneously connecting their solutions to potential clients through co-creation opportunities.
+                            </p> -->
+                            <p>We got this and many other features cooking for you. Please leave your contact details with us, we'll let you know once we go live.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="field form-group ">
+                                        <label for="Name" class="">Name*</label>
+                                        <div>
+                                            <input type="text" name="Name" id="Name" class="input is-full-width" maxlength="100" data-validate-field="Name">
+                                        </div>
+                                    </div>
+                                    <div class="field form-group ">
+                                        <label for="Email" class="label has-text-weight-normal">Email Address*</label>
+                                        <div class="control">
+                                            <input type="email" name="Email" id="Email" class="input is-full-width" maxlength="100" data-validate-field="Email">
+                                        </div>
+                                    </div>
+                                    <div class="field form-group ">
+                                        <label for="Phone" class="label ">Phone Number</label>
+                                        <div class="control">
+                                            <input type="text" name="Phone" id="Phone" maxlength="100" data-validate-field="Phone">
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="form-group ">
-                                    <label for="email "> Email:</label>
-                                    <input type="email " class="form-control " id="email " name="email " required maxlength="50 ">
-                                </div>
-                                <div class="form-group ">
-                                    <label for="phone "> Phone Number:</label>
-                                    <input type="number " class="form-control " id="phone " name="phone " required maxlength="50 ">
+                                <div class="col-md-6">
+
+                                    <div class=" form-group ">
+                                        <label for="Message" class="Label">Message</label>
+                                        <div>
+                                            <textarea name="Message" id="Message" class="textarea" maxlength="3000" rows="7" placeholder="Drop us a line... " data-validaten -field="Message"></textarea>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-md-6">
 
-                                <div class="form-group ">
-                                    <label for="name "> Message:</label>
-                                    <textarea class="form-control " type="textarea " name="message " id="message " placeholder="Drop us a line... " maxlength="6000 " rows="7 "></textarea>
-                                </div>
-                            </div>
-                        </div>
+                            <div id="fcf-status" class="fcf-status"></div>
 
-
-                        <button type="submit " class="btn btn-lg btn-success btn-block ">Send &rarr;</button>
-                    </form>
-                    <div id="success_message " style="width:100%; height:100%; display:none; ">
-                        <h3>Sent your message successfully!</h3>
+                            <button id="fcf-button" type="submit" class="field btn btn-lg btn-success btn-block ">Send &rarr;</button>
+                        </form>
                     </div>
-                    <div id="error_message " style="width:100%; height:100%; display:none; ">
-                        <h3>Error</h3> Sorry there was an error sending your form. </div>
+
+                    <div id="fcf-thank-you" style="display:none">
+                        <!-- Thank you message goes below -->
+                        <strong>It's sent!</strong>
+                        <p>Now relax, we will get back in touch with you soon.</p>
+                        <!-- Thank you message goes above -->
+                    </div>
+
+
                 </div>
             </div>
         </div>

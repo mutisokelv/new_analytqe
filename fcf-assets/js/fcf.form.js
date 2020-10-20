@@ -11,15 +11,20 @@ new JustValidate('.fcf-form-class', {
             "maxLength": 100,
             "email": true
         },
+        "Phone": {
+            "required": false,
+            "minLength": 1,
+            "maxLength": 100,
+        },
         "Message": {
-            "required": true,
+            "required": false,
             "minLength": 1,
             "maxLength": 3000
         }
     },
     colorWrong: '#dc3545',
     focusWrongField: true,
-    submitHandler: function (cform, values, ajax) {
+    submitHandler: function(cform, values, ajax) {
 
         var button_value = getButtonValue('fcf-button');
         disableButton('fcf-button');
@@ -28,7 +33,7 @@ new JustValidate('.fcf-form-class', {
             method: 'POST',
             data: values,
             async: true,
-            callback: function (response) {
+            callback: function(response) {
                 var done = false;
                 if (response.indexOf('Fail:') == 0) {
                     // configration problem
@@ -98,18 +103,11 @@ function showDebugMessage(message) {
     document.getElementById('fcf-status').innerHTML = display;
 }
 
-// Removing this credit is NOT allowed
-// Please purchase a pro license for credit removal rights
-var creditcontainer = document.querySelector(".buttons");
-var creditdiv = document.createElement('div');
-creditdiv.innerHTML = '<div class="field" style="font-size:0.9em;color:#aaa;padding-top:15px;padding-bottom:10px">Contact Form by <a href="https://www.freecontactform.com/forms/form-creator" style="font-size:0.9em;color:#aaa;text-decoration:none">FCF Form Creator</a></div>';
-creditcontainer.parentNode.insertAdjacentElement('afterend', creditdiv);
-
 
 function showSuccessMessage(message) {
-    var message = '<br><br>' + message.substring(8);
+    // var message = '<br><br>' + message.substring(8);
     var content = document.getElementById('fcf-thank-you').innerHTML;
-    document.getElementById('fcf-thank-you').innerHTML = content + message;
+    document.getElementById('fcf-thank-you').innerHTML = content;
     document.getElementById('fcf-status').innerHTML = '';
     document.getElementById('fcf-form').style.display = 'none';
     document.getElementById('fcf-thank-you').style.display = 'block';

@@ -1,6 +1,7 @@
 Thank you for your message, we will be in touch soon.
     
     
-Your name: {Name}
-Your email address: {Email}
-Your message: {Message}
+Name: {Name}
+Email Address: {Email}
+Phone: {Phone}
+Message: {Message}
